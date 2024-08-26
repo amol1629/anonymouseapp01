@@ -1,0 +1,595 @@
+/* Custom CSS for hover effects, animations, and transitions */
+/* AppNavigation CSS  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+.login-background {
+  position: relative;
+  /* height: 100vh; */
+
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px);
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.login-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://marketplace.canva.com/EAFdYsYGPBc/1/0/1131w/canva-beige-white-natural-paper-notes-background-a4-document--ZjN0R_fxLM.jpg")
+    no-repeat center center;
+  background-size: cover;
+  filter: blur(5px); /* Apply blur effect here */
+  z-index: -1;
+}
+
+.admin-background {
+  background: url("https://e0.pxfuel.com/wallpapers/142/1/desktop-wallpaper-dark-blue-background-aesthetic-dark-blue.jpg")
+    no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*  */
+
+.backdrop-effect {
+  background-color: rgba(255, 255, 255, 0.226);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.login-logo-image {
+  width: 50px;
+  height: 50px;
+}
+
+.login-title-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.products-team-name {
+  /* font-size: 20px; */
+  font-weight: bold;
+  text-align: center;
+  /* margin-bottom: 10px; */
+  background: linear-gradient(to right, #f2bfff, #aff5ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.products-team-name-logo {
+  background: linear-gradient(270deg, #3f5efb, #fc466b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-name-text {
+  background: linear-gradient(to right, #33ff00, #c402ff, #ff0101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-title-text {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-bottom: 10px; */
+  background: linear-gradient(to right, #ff30c4, #ae1cde, #de00b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Styling for navigation buttons and premium button */
+.nav-button {
+  /* Basic button styles */
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown-nav-buttons {
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect on navigation buttons */
+.nav-button:hover {
+  opacity: 0.7;
+}
+
+/* Animation effect when a navigation button is clicked */
+.nav-button:active,
+.web-nav-button:active {
+  animation: pulse 0.3s; /* Trigger the 'pulse' animation */
+}
+
+/* Add this to your Common.css or another appropriate stylesheet */
+.dropdown-item {
+  display: block;
+  width: 200px;
+  padding: 8px 12px;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item:hover {
+  color: #00bfa5;
+}
+
+.square-logo {
+  width: 60px; /* Adjust this value as needed */
+  height: 60px; /* Ensure this is the same as width for a square aspect ratio */
+  border-radius: 50%;
+  object-fit: cover; /* This ensures the image covers the area without stretching */
+}
+
+/* Keyframes for the 'pulse' animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Keyframes for the 'fadeIn' animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Fully transparent */
+  }
+  to {
+    opacity: 1; /* Fully opaque */
+  }
+}
+
+/* Keyframes for the 'fadeOut' animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1; /* Fully opaque */
+  }
+  to {
+    opacity: 0; /* Fully transparent */
+  }
+}
+
+/* Styling for dropdown and select-dropdown elements */
+.dropdown,
+.select-dropdown {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.dropdown {
+  animation-name: fadeIn;
+}
+
+/* Search page CSS */
+.vertical-line {
+  position: relative;
+  padding-top: 20px; /* Space for the line extension above the box */
+}
+
+.vertical-line::after {
+  content: "";
+  position: absolute;
+  /* left: 50%;  */
+  height: 38%;
+  border-left: 2px solid #7d8d9f; /* Adjust color and thickness as needed */
+  /* top: -46px; */
+  bottom: -45px; /* Adjust this value based on the gap you want below the box */
+}
+
+/* Admin Home Page */
+
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 50px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -10px 10px -10px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: rgb(3, 99, 3);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 4px 27px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  transform: scale(1.02) rotate(-1deg);
+}
+
+.banner-bg {
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+.main-div .delete-icon,
+.main-div .edit-icon {
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.main-div .edit-icon:hover,
+.main-div .delete-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.7s ease-in-out;
+}
+
+.main-div:hover .delete-icon,
+.main-div:hover .edit-icon {
+  opacity: 1;
+}
+
+/* Custom CSS for select options */
+.select-option:hover option:hover {
+  background-color: pink; /* Change this to your desired shade of pink */
+  margin: 12px 0;
+}
+
+/* AdminHomePage CSS */
+.all-users-text {
+  background: linear-gradient(270deg, #3f5efb, #fc466b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-color {
+  background: linear-gradient(270deg, #ff30c4, #ae1cde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Show All Users Table CSS */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* margin: 25px 0; */
+  font-size: 0.9em;
+  min-width: 400px;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+  animation: fadeIn 0.5s ease-in-out;
+  border-spacing: 0;
+  border-radius: 15px; /* Rounded corners for the table itself */
+  overflow: hidden; /* Ensures the rounded corners are visible */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.user-table thead th:first-child,
+.user-table tbody td:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.user-table thead th:last-child,
+.user-table tbody td:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.user-table thead tr {
+  background-color: #009879;
+  color: white;
+  text-align: center !important;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 15px;
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+
+.user-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.user-table tbody tr:nth-of-type(odd) {
+  background-color: #fffdfd;
+  border-radius: 50%;
+}
+
+.user-selected {
+  background-color: #fcd6d6 !important;
+
+  font-style: italic;
+  border-radius: 50%;
+  animation: userSelectAnimation 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-table tbody tr {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-table tbody tr:hover {
+  background-color: #dafaeb; /* Lighter shade for hover */
+  transform: scale(1.02); /* Slightly scale up */
+}
+
+.user-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.user-table tbody tr:hover {
+  background-color: #dafaeb;
+  cursor: pointer;
+  border-radius: 400px;
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+}
+
+.all-checked-box {
+  padding-top: 5px;
+}
+
+/* Regular table styles */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  text-align: center;
+  padding: 10px;
+}
+
+@keyframes userSelectAnimation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #eaeaea;
+  }
+}
+
+/* Responsive table styles */
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .user-table,
+  .user-table thead,
+  .user-table tbody,
+  .user-table th,
+  .user-table td,
+  .user-table tr {
+    display: block;
+  }
+
+  .user-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    margin: 10px 10px;
+    padding: 2px 20px;
+    border: 1px solid green;
+  }
+
+  .user-table tbody tr:nth-of-type(odd) {
+    background-color: #fcf8f8;
+    border-radius: 20px;
+    margin: 10px 10px;
+    padding: 2px 20px;
+    border: 1px solid green;
+  }
+
+  .user-selected {
+    background-color: #fcd6d6 !important;
+    border-radius: 20px;
+    margin: 10px 10px;
+    padding: 2px 20px;
+    border: 1px solid red !important;
+  }
+
+  .user-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .user-table tr {
+    margin-bottom: 10px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-table td {
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .user-table td:before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 45%;
+    padding-right: 15px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    content: attr(data-label);
+  }
+
+  /* Label the data */
+  .user-table td:nth-of-type(1):before {
+    content: "Selected";
+  }
+  .user-table td:nth-of-type(2):before {
+    content: "Sr No";
+  }
+  .user-table td:nth-of-type(3):before {
+    content: "First Name";
+  }
+  .user-table td:nth-of-type(4):before {
+    content: "Last Name";
+  }
+  .user-table td:nth-of-type(5):before {
+    content: "Email";
+  }
+  .user-table td:nth-of-type(6):before {
+    content: "Designation";
+  }
+  .user-table td:nth-of-type(7):before {
+    content: "Created Date";
+  }
+}
+
+/* Pagination CSS in ShowAllUser Modal */
+.pagination {
+  display: flex;
+  justify-content: center; /* Center the pagination */
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.pagination__link {
+  background-color: #f7e8ff; /* Pink background for non-active page numbers */
+  color: purple; /* White text color */
+  padding: 4px 16px;
+  border-radius: 0.5rem;
+  line-height: 30px; /* Center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  margin: 0 5px;
+  border: none; /* No border */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  border: 1px solid purple;
+}
+
+.pagination__link--disabled {
+  opacity: 0.5; /* Make disabled links more transparent */
+  cursor: not-allowed; /* Change cursor to indicate non-clickable */
+}
+
+.pagination__link:hover {
+  background-color: #f1d7ff; /* Lighter pink on hover */
+  box-shadow: 0px 4px 8px rgba(250, 229, 248, 0.9); /* Box shadow for a raised effect */
+  transform: translateY(-1px); /* Slightly raise the link */
+  transition: all 0.3s ease;
+}
+
+.page-item {
+  background-color: #ffffff33; /* Semi-transparent white background */
+  cursor: pointer;
+  backdrop-filter: blur(10px); /* Blur effect for the glass-like appearance */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: purple; /* Text color */
+  border: 1px solid gray; /* Light border for depth */
+  border-radius: 50%; /* Circular shape */
+  width: 30px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  line-height: 29px; /* Center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-item:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  /* border: 1px solid gray; */
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: all 0.8s ease-in-out;
+}
+
+.pagination__link--active {
+  background-color: #009879; /* Purple background for the active link */
+  color: white; /* White text color for better readability */
+  border-radius: 50%; /* Circular shape */
+  width: 30px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  line-height: 29px; /* Center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  border: 1px solid rgb(0, 128, 66);
+}
+
+.pagination__link--active:hover {
+  background-color: #02b490; /* Purple background for the active link */
+}
+
+/* For turning page animation */
+/* @keyframes flipPage {
+  0% {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+}
+
+.flip-effect {
+  animation: flipPage 1s ease-in-out;
+  transform-style: preserve-3d;
+} */

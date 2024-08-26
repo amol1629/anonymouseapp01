@@ -1,0 +1,12 @@
+{
+  "faqs": [
+    {
+      "question": "How can I create a new document in DocumentCreate?",
+      "answer": "To create a new document in DocumentCreate, follow these steps:\n1. Click on the 'New Document' button located at the top right corner of the dashboard.\n2. Choose a template or start with a blank document.\n3. Enter your document title and begin typing your content in the editor.\n4. Use the toolbar to format text, insert images, tables, and other elements.\n5. Click 'Save' to save your document or 'Publish' to share it with others."
+    },
+    {
+      "question": "Can I collaborate with others in real-time on a document?",
+      "answer": "Yes, DocumentCreate allows real-time collaboration. You can invite others to collaborate on a document by following these steps:\n1. Open the document you want to collaborate on.\n2. Click on the 'Share' button in the top right corner.\n3. Enter the email addresses of the people you want to invite.\n4. Set the permission level (view, comment, or edit) for each collaborator.\n5. Click 'Send Invite' to send the invitations.\n6. Collaborators will receive an email with a link to the document, where they can start collaborating with you in real-time."
+    }
+  ]
+}
